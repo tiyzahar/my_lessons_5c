@@ -1,0 +1,53 @@
+body
+{
+	background-color: lightgray;
+}
+h1
+{
+	font-family: Georgia;
+	color: maroon;
+	size: 24px;
+	text-align: center;
+}
+h2
+{
+	font-family: Georgia;
+	color: darkred;
+	size: 18px;
+	text-align: center;
+}
+p
+{
+	font-family: Arial;
+	color: black;
+	size: 16px;
+	text-align: center;
+}
+table, tr, th, td
+{
+	font-family: Arial;
+	border-collapse: collapse;
+}
+th, td
+{
+	padding: 15px;
+}
+
+{
+    box-sizing: border-box;
+    }
+.column
+{
+    float: left;
+    width: 50%;
+}
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav
+{
+	color: blue;
+}

@@ -1,0 +1,30 @@
+h1
+{
+	font-family: Georgia;
+	color: blue;
+	background-color: lightgray;
+	size: 24px;
+	text-align: center;
+}
+h2
+{
+	font-family: Georgia;
+	color: darkred;
+	size: 18px;
+}
+p
+{
+	font-family: Arial;
+	color: black;
+	size: 16px;
+}
+table, tr, th, td
+{
+	font-family: Arial;
+	border: 2px solid white;
+	border-collapse: collapse;
+}
+th, td
+{
+	padding: 15px;
+}

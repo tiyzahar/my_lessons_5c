@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>QUICK EXERCISE – Javascripts</title>
+</head>
+<body>
+
+	<h2>WELCOME</h2>
+	<p id="content">Welcome to my page</p>
+	<button type="button" onclick='document.getElementById("content").innerHTML = "I love to learn web design"'>Click ME</button>
+
+	<p id="style1">Hello! Welcome to Faculty of Information Management</p>
+
+
+
+	<script>
+		function myStyle()
+		{
+			document.getElementById("style1").style.fontSize="25px";
+			document.getElementById("style1").style.fontFamily="Courier New";
+			document.getElementById("style1").style.color="blue";
+			document.getElementById("style1").style.backgroundColor="yellow";
+		}
+	</script>
+
+	<button type="button" onclick="myStyle()">Click ME</button>
+	<h2>BULB</h2>
+
+	<script>
+		function lampu(a)
+		{
+			var pic;
+			if (a==0) 
+			{
+				pic="images/mentol1.jpeg"
+			}
+			else
+			{
+				pic="images/mentol2.jpg"
+			}
+			document.getElementById('gambar').src=pic;
+		}
+	</script>
+
+	<img src="images/mentol1.jpeg" id="gambar" width="400" height="400">
+
+	<p>
+		<button type="button" onclick="lampu(1)">Turn ON</button>
+		<button type="button" onclick="lampu(0)">Turn OFF</button>
+	</p>
+
+	
+	<h2>POPUP</h2>
+	<button onclick="myAlertBox()">Click Here</button>
+
+
+	<script>
+		function myAlertBox()
+		{
+			alert("Assalamualaikum \n Selamat datang ke kelas IMS456 \n Semoga kita beroleh ilmu bermanfaat")
+		}
+	</script>
+
+	<h2>MAPS</h2>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7967.532599541585!2d101.7110958!3d3.1562120999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d0de468683%3A0x1220827708fd1448!2sKLCC!5e0!3m2!1sen!2smy!4v1734230558199!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Links</title>
+
+	<style>
+		a:link
+		{
+			color:green;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:visited
+		{
+			color: darkred;
+			background-color: yellow;
+			text-decoration: none;
+		}
+		a:active
+		{
+			color: hotpink;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+		a:hover
+		{
+			color: yellow;
+			background-color: forestgreen;
+			text-decoration: underline;
+		}
+	</style>
+
+
+
+
+
+</head>
+<body>
+
+	<h3>Internal Links</h3>
+	<a href="html_quotation.html"> HTML Quotation </a>
+
+	<h3>External Links</h3>
+	<a href="https://www.w3schools.com/"> W3Schools </a>
+
+	<h3>Target Attribute</h3>
+	<!--_self,_blank,_parent,_top -->
+
+	<a href="html_image.html" target="_blank"> HTML Images </a>
+
+	<h3>Image as Links</h3>
+	<a href="https://ufuture.uitm.edu.my/login"target="_blank" title="Go to UFuture" > <img src="button/button.png"></a>
+
+	<h3>Button as Links</h3>
+	<button onclick="document.location='html_basic_structure.html'">HTML Basic Structure</button>
+
+
+</body>
+</html>

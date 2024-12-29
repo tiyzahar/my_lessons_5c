@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Table</title>
+
+	<style>
+		table, tr, th, td
+		{
+			border:2px solid darkred;
+			border-collapse: collapse;
+		}
+		th, td
+		{
+			padding: 45px;
+		}
+		th 
+		{
+			background-color: skyblue;
+			color: darkcyan;
+			text-align: justify;
+		}
+		tr:nth-child(odd)
+		{
+			background-color: peachpuff;
+		}
+		tr:nth-child(even)
+		{
+			background-color: lightslategray;
+		}
+		td
+		{
+			text-align: center;
+		}
+		td:hover
+		{
+			background-color: purple;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Basic Table</h1>
+
+	<table style="width:100%">
+		<caption>Table 1: Basic HTML Table</caption>
+		<tr>
+			<th style="width:30%">Name</th>
+			<th style="width:15%">Student ID</th>
+			<th style="width:45%">Picture</th>
+			<th style="width:10%">Phone Number</th>	
+		</tr>
+
+		<tr>
+			<td>Izzati Zaharudin</td>
+			<td>2022867886</td>
+			<td><img src="images/bubu.jpeg" style="height: 100px;"></td>
+			<td>01130417782</td>
+		</tr>
+		
+		<tr style="height:250px;">
+			<td>Izzati Zaharudin</td>
+			<td>2022867886</td>
+			<td><img src="images/mochi.gif" style="height: 100px;"></td>
+			<td>01130417782</td>
+		</tr>
+
+		<tr>
+			<td>Izzati Zaharudin</td>
+			<td>2022867886</td>
+			<td><img src="images/bubu_cute.png" style="height: 100px;"></td>
+			<td>01130417782</td>
+		</tr>
+	</table>
+
+	<h1>Colspan</h1>
+
+	<table style="width:100px">
+
+		<tr>
+			<th>Name</th>
+			<th>Student ID</th>
+			<th colspan="3">Subject</th>
+		</tr>
+		
+		<tr>
+			<td>Izzati</td>
+			<td>2022867886</td>
+			<td>IMD318</td>
+			<td>IMD317</td>
+			<td>IMD316</td>
+		</tr>
+	</table>
+
+	<h1>Rowspan</h1>
+
+	<table style="width:70%">
+		<tr>
+			<th>Name</th>
+			<th>Izzati</th>
+		</tr>
+		
+		<tr>
+			<th rowspan="2">Email</th>
+			<td>izzati@gmail.com</td>
+		</tr>
+
+		<tr>
+			<td>izzatizahar5@gmail.com</td>
+		</tr>
+
+		<tr>
+			<th>Address</th>
+			<td rowspan="2">Kelantan</td>
+		</tr>
+
+		<tr>
+			<th>Letter Address</th>
+		</tr>
+	</table>
+
+</body>
+</html>
